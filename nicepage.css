@@ -2020,7 +2020,8 @@ footer {
 section > *,
 header > *,
 footer > *,
-.u-sheet > * {
+.u-sheet > *,
+.u-section-row > * {
   position: relative;
 }
 base {
@@ -16846,10 +16847,10 @@ a.pswp__share--download:hover {
   --animation-slide_out_up-translate_y: -100%;
   --animation-slide_out_left-translate_x: -100%;
   --animation-slide_out_right-translate_x: 100%;
-  --animation-custom_in-translate_x: 50px;
+  --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-scale: 0.3;
-  --animation-custom_in-rotate: 180deg;
+  --animation-custom_in-scale: 1;
+  --animation-custom_in-rotate: 0deg;
   --animation-custom_in-opacity: 0;
 }
 @keyframes bounce {
@@ -37160,11 +37161,20 @@ a.u-link.u-text-hover-grey-90:hover {
     margin-right: 654px;
   }
 
+  .u-header .u-group-1 {
+    margin-top: -74px;
+  }
+
   .u-header .u-menu-1 {
-    margin-bottom: -7px;
+    margin-top: 12px;
+    margin-bottom: 24px;
   }
 }
 @media (max-width: 767px) {
+  .u-header .u-sheet-1 {
+    min-height: 147px;
+  }
+
   .u-header .u-image-1 {
     width: 50px;
     height: 50px;
@@ -37183,7 +37193,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-menu-1 {
-    margin: -86px auto 54px 0;
+    margin: -86px auto 79px 0;
   }
 }
 @media (max-width: 575px) {
